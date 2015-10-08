@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3d6a842094aaf345451daac14bae4afa:493c1f3ad24bf263c26fadf04192a120:3dd2b85878b2cc18c3a33906bf768629$ -->
+<TextureAtlas imagePath="spritesheet_coin.png">
+    <SubTexture name="spritesheet_coin_01" x="2" y="2" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_02" x="67" y="2" width="67" height="64"/>
+    <SubTexture name="spritesheet_coin_03" x="136" y="2" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_04" x="2" y="68" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_05" x="67" y="68" width="68" height="64"/>
+    <SubTexture name="spritesheet_coin_06" x="137" y="68" width="58" height="64"/>
+    <SubTexture name="spritesheet_coin_07" x="2" y="134" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_08" x="67" y="134" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_09" x="132" y="134" width="68" height="64"/>
+    <SubTexture name="spritesheet_coin_10" x="2" y="200" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_11" x="67" y="200" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_12" x="132" y="200" width="67" height="64"/>
+    <SubTexture name="spritesheet_coin_13" x="2" y="266" width="68" height="64"/>
+    <SubTexture name="spritesheet_coin_14" x="72" y="266" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_15" x="137" y="266" width="67" height="64"/>
+    <SubTexture name="spritesheet_coin_16" x="2" y="332" width="57" height="64"/>
+    <SubTexture name="spritesheet_coin_17" x="61" y="332" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_18" x="126" y="332" width="67" height="64"/>
+    <SubTexture name="spritesheet_coin_19" x="2" y="398" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_20" x="67" y="398" width="63" height="64"/>
+    <SubTexture name="spritesheet_coin_21" x="132" y="398" width="68" height="64"/>
+</TextureAtlas>

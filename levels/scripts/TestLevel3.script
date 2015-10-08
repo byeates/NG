@@ -1,0 +1,4 @@
+//this is a comment line
+player.x + 700
+pause(3)
+player.x - 600

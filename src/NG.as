@@ -20,6 +20,8 @@ package
 		private var m_globals:globals;
 		
 		public function NG() {
+			Starling.multitouchEnabled = true;
+			Starling.handleLostContext = true;
 			//set stage align and stage scaling
 			stage.align = StageAlign.TOP_LEFT;
 			stage.scaleMode = StageScaleMode.NO_SCALE;

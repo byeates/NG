@@ -4,7 +4,7 @@ package game.enemy
 	
 	import flash.utils.Dictionary;
 	import flash.utils.getDefinitionByName;
-	
+
 	import game.g_entity;
 	import game.turret.gt_turretmanager;
 	
@@ -20,7 +20,7 @@ package game.enemy
 		PROTECTED
 		===============*/
 		/** list of created enemies */
-		protected var m_activeEnemies:Vector.<g_entity>;
+		protected var m_activeEnemies:Vector.<ge_enemy>;
 		
 		/** list of removed enemies */
 		protected var m_disabledEnemies:Dictionary;
@@ -32,7 +32,7 @@ package game.enemy
 		private static var m_instance:ge_enemymanager;
 		
 		public function ge_enemymanager( pvt:privateclass ) {
-			m_activeEnemies = new Vector.<g_entity>;
+			m_activeEnemies = new Vector.<ge_enemy>;
 			m_disabledEnemies = new Dictionary;
 		}
 		
@@ -83,7 +83,7 @@ package game.enemy
 		}
 		
 		/** Remove the enemy from the active list, disable it, and add to the disabled list to be re-used if needed */
-		public function RemoveEnemy( enemy:g_entity ):void {
+		public function RemoveEnemy( enemy:ge_enemy ):void {
 			m_activeEnemies.splice( m_activeEnemies.indexOf( enemy ), 1 );
 			if ( !m_disabledEnemies[ enemy["type"] ] ) {
 				m_disabledEnemies[ enemy[ "type" ] ] = [];
@@ -92,7 +92,7 @@ package game.enemy
 			gt_turretmanager.instance.UpdateEnemyLists();
 		}
 		
-		public function get activeEnemies():Vector.<g_entity> { return m_activeEnemies; }
+		public function get activeEnemies():Vector.<ge_enemy> { return m_activeEnemies; }
 		
 		/** returns the singleton instance */
 		static public function get instance():ge_enemymanager { return m_instance = m_instance ? m_instance : new ge_enemymanager( new privateclass() ); }

@@ -43,7 +43,7 @@ package renderer
 			m_loadState = "ready";
 			
 			++m_assetsLoaded;
-			if ( m_callback ) {
+			if ( m_callback != null ) {
 				m_callback( bitmap, m_assetsLoaded == m_loadAmount );
 			}
 			
@@ -75,7 +75,7 @@ package renderer
 			if ( m_loadQue.length > 0 ) { 
 				LoadNextAsset( m_loadQue[ 0 ].name, m_loadQue[ 0 ].callback ); 
 			}
-			else if ( m_callback ) {
+			else if ( m_callback != null ) {
 				m_callback( null, true );
 			}
 		}

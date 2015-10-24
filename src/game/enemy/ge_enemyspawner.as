@@ -9,8 +9,8 @@ package game.enemy
 	import game.g_entity;
 	
 	import starling.core.Starling;
-	import starling.extensions.PDParticleSystem;
-	import starling.extensions.ParticleSystem;
+	//import starling.extensions.PDParticleSystem;
+	//import starling.extensions.ParticleSystem;
 
 	/*=============================================================================
 	ge_enemyspawner
@@ -39,7 +39,7 @@ package game.enemy
 		protected var m_spawnReady:Boolean;
 		
 		/** particle system is the effect created at spawner's location */
-		private var m_particleSystem:ParticleSystem;
+		//private var m_particleSystem:ParticleSystem;
 		
 		/** this is set to the last spawned enemy */
 		protected var m_currentEnemy:g_entity;
@@ -129,13 +129,13 @@ package game.enemy
 		 * 	The particle.pex file can be update to change values as well, (pex is an xml)
 		 */
 		protected function AddParticleEffect():void {
-			m_particleSystem = new PDParticleSystem( assets.GetConfig( "particle" ), assets.GetTexture( "particle" ) );
+			/*m_particleSystem = new PDParticleSystem( assets.GetConfig( "particle" ), assets.GetTexture( "particle" ) );
 			m_particleSystem.emitterX = m_x;
 			m_particleSystem.emitterY = m_y;
 			m_particleSystem.start();
 			
 			globals.foreground.addChild( m_particleSystem );
-			Starling.juggler.add( m_particleSystem );
+			Starling.juggler.add( m_particleSystem );*/
 		}
 	}
 }

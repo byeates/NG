@@ -53,7 +53,7 @@ package game
 			
 			var comp:Array = fullCommand.split( " " );
 			var compmand:String = comp[ 0 ];
-			var performOp:Boolean = comp.length > 1 ? comp[1].search( /[+-/*]/g ) != -1 : false;
+			var performOp:Boolean = true;
 			
 			if ( performOp ) {
 				var asset:DisplayObject = comp[0].split( "." )[0] == "player" ? globals.player : null;

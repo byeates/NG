@@ -26,7 +26,7 @@ package renderer
 				if ( currentFrame < m_endFrame ) {
 					return;
 				} else {
-					if ( m_onAnimationEnd ) { 
+					if ( m_onAnimationEnd != null ) {
 						m_onAnimationEnd(); 
 					}
 					currentFrame = m_startFrame;

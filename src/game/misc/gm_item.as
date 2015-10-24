@@ -44,7 +44,7 @@ package game.misc
 		}
 		
 		public function Pickup():void {
-			if ( onPickup != null ) { onPickup; }
+			if ( onPickup != null ) { onPickup(); }
 		}
 		
 		/*========================================================================================

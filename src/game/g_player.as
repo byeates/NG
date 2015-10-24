@@ -99,7 +99,7 @@ package game
 			super.SetDefaults();
 			
 			CenterOrigin();
-			if ( m_onLoadedCallback ) { m_onLoadedCallback(); }
+			if ( m_onLoadedCallback != null ) { m_onLoadedCallback(); }
 			
 			m_turretMenu.x 		= -m_assetHalfWidth;
 			m_turretMenu.y 		= -m_asset.height;
@@ -250,7 +250,7 @@ package game
 		public function RepairTurret():void {
 			if ( m_repairTime == 0 || getTimer() - m_repairTime >= REPAIR_DELAY ) {
 				m_repairTime = getTimer();
-				gt_turretmanager.instance.turrets[ m_repairTurret ].Repair();
+				gt_turretmanager.instance.turrets[ m_repairTurret ] [ "Repair" ]();
 				globals.echo( "REPAIRING TURRET! : " + gt_turretmanager.instance.turrets[ m_repairTurret ], "HEALTH: " + gt_turretmanager.instance.turrets[ m_repairTurret ].health );
 			}
 		}

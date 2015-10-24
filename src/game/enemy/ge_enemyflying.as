@@ -12,7 +12,8 @@ package game.enemy
 	import game.g_entity;
 	import game.g_level;
 	import game.g_projectile;
-	import game.turret.gt_turretbomb;
+import game.turret.gt_turret;
+import game.turret.gt_turretbomb;
 	import game.turret.gt_turretmanager;
 	import game.turret.gt_turretranged;
 	
@@ -97,7 +98,7 @@ package game.enemy
 		 * Searches for the cloests target, with the bottom line being the player
 		 */
 		protected function AssignTarget():void {
-			var activeTurrets:Vector.<g_entity> = gt_turretmanager.instance.turrets;
+			var activeTurrets:Vector.<gt_turret> = gt_turretmanager.instance.turrets;
 			var dist:Number, dx:Number;
 			var i:int;
 			var pos:Vector2D = new Vector2D( x, y );

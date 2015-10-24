@@ -17,7 +17,7 @@ package game.turret
 		protected var m_activeTurret		:int;
 		
 		/** all of the created active turrets */
-		protected var m_turrets				:Vector.<g_entity>;
+		protected var m_turrets				:Vector.<gt_turret>;
 		
 		/** the number of available turrets to choose from */
 		protected var m_availableTurrets	:Vector.<String>;
@@ -34,7 +34,7 @@ package game.turret
 		public const NUM_TURRETS			:int 	= TURRET_TYPES.length;
 		
 		public function gt_turretmanager( pvt:privateclass ) {
-			m_turrets = new Vector.<g_entity>;
+			m_turrets = new Vector.<gt_turret>;
 			m_availableTurrets = new Vector.<String>;
 		}
 		
@@ -79,7 +79,7 @@ package game.turret
 			}
 		}
 		
-		public function RemoveTurret( turret:g_entity ):void {
+		public function RemoveTurret( turret:gt_turret ):void {
 			if ( m_turrets.indexOf( turret ) != -1 ) {
 				m_turrets.splice( m_turrets.indexOf( turret ), 1 );
 			}
@@ -99,7 +99,7 @@ package game.turret
 		public function set activeTurret( val:int ):void { m_activeTurret = val; }
 		public function get availableTurrets():Vector.<String> { return m_availableTurrets; }
 		
-		public function get turrets():Vector.<g_entity> { return m_turrets; }
+		public function get turrets():Vector.<gt_turret> { return m_turrets; }
 		
 		static public function get instance():gt_turretmanager { return m_instance ? m_instance : m_instance = new gt_turretmanager( new privateclass ); }		
 	}

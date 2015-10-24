@@ -125,7 +125,7 @@ package renderer
 			r_tileloader.instance.LoadAll();
 		}
 		
-		protected function OnTileLoaded( asset:Bitmap, isComplete ):void {
+		protected function OnTileLoaded( asset:Bitmap, isComplete:Boolean ):void {
 			if ( asset != null ) {
 				m_currentLevel.tiles.push( asset );
 			}
